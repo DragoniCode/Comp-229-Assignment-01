@@ -6,16 +6,17 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - MyPage</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <!--Name:Assignment 001 Created by:Gabriele Hunte On:September,25th,2016-->
+    <%--I used in page css since it wasn't so big and the cascading was better managed.--%>
 </head>
-<body>
+<body style="background-color:black; color:white;">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -46,7 +47,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">MyPage</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -78,7 +79,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> &copy; Copyright Gabriele Hunte #:300833315- Comp229-007-Adv.Web Application Development - Fall 2016-Assignment 01 </p>
             </footer>
         </div>
     </form>
